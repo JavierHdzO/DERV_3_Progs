@@ -13,9 +13,12 @@ public class PlayerFPC : MonoBehaviour
     public float rotmax;
     public float rotmin;
 
+
+    Vector3 mov = Vector3.zero;
+
     void Start()
     {
-
+        //cc = GetComponent<CharacterController>();
     }
 
 
@@ -29,6 +32,7 @@ public class PlayerFPC : MonoBehaviour
         cam.transform.localEulerAngles = new Vector3(-ejeV, 0, 0);
         transform.Rotate(0, ejeH, 0);
         ejeV = Mathf.Clamp(ejeV, rotmin, rotmax);
-        Input.GetAxis("Mouse X");
+
+
     }
 }

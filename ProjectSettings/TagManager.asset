@@ -8,6 +8,8 @@ TagManager:
   - PowerUp
   - Dinero
   - terrain
+  - Lampara
+  - Banco
   layers:
   - Default
   - TransparentFX

@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class ControladorUI : MonoBehaviour
 {
-
     public TextMeshProUGUI texto;
-
-    public void saludar() {
-        texto.text = "Hola Amigo! Como estas? :D";
+    
+    public void saludar() 
+    {
+        texto.text = "Hola amigo";
     }
 }

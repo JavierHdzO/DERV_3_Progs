@@ -31,6 +31,8 @@ public class MovimientoFisicas : MonoBehaviour
     {        
         
         if (Input.GetKey(KeyCode.W)) {
+
+            Debug.Log("Se presiono la w" + Input.GetKey(KeyCode.W));
             rb.MovePosition(rb.position + transform.forward * desplazamiento * Time.deltaTime);
             //new Vector3(0, 0, 1);
         }

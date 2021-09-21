@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/InicioJuego.unity
+  - enabled: 0
+    path: Assets/Scenes/Clase/InicioJuego.unity
     guid: c7d0299723022434dabe7af5dca44e52
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Escenario_1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Proyecto/gamestart.unity
+    guid: 1361bd675457b48cb80cfe08e4173b88
+  - enabled: 1
+    path: Assets/Scenes/Proyecto/Ciudad.unity
+    guid: ae06fff21990afa4fb01fcc91516dae0
   m_configObjects: {}

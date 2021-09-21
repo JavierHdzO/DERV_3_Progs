@@ -10,6 +10,7 @@ public class SistemaJuego : MonoBehaviour
     public TextMeshProUGUI txt_tiempo;
     public TextMeshProUGUI Fin;
     private float tiempo = 10f;
+
     int puntaje;
 
 
@@ -26,14 +27,13 @@ public class SistemaJuego : MonoBehaviour
     void Update()
     {
         tiempo -= Time.deltaTime;
-
         txt_tiempo.text = " " + tiempo.ToString("f0");
 
         if (tiempo <= 0)
         {
-            
+            //txt_tiempo.text = "0";
             Fin.enabled = true;
-            tiempo = Time.timeScale = 0f;
+            tiempo = Time.timeScale = 0;
         }
 
     }
@@ -49,16 +49,17 @@ public class SistemaJuego : MonoBehaviour
         string etiqueta = collision.gameObject.tag;
         string nombre;
 
+        
+
         if (etiqueta.Equals("Dinero"))
         {
-            
+            Debug.Log("Colisión con: " + etiqueta);
             nombre = collision.gameObject.name;
 
             GameObject gameObj;
             gameObj = GameObject.Find(nombre);
-            
             Destroy(gameObj);
-            
+
             puntaje++;
             txt_puntaje.text = puntaje.ToString();
 
@@ -66,6 +67,16 @@ public class SistemaJuego : MonoBehaviour
 
         }
 
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        
     }
 
 }
