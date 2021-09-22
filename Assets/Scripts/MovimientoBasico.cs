@@ -4,33 +4,25 @@ using UnityEngine;
 
 public class MovimientoBasico : MonoBehaviour
 {
-
-    public float desplazamiento = 10;
-
+    public float desplazamiento;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //i = 0;
+        desplazamiento = 10;
     }
 
     // Update is called once per frame
     void Update()
     {
         Debug.Log("Prueba");
-        //Debug.Log.("Prueba" + i);
         //i++;
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W)) 
         {
             Debug.Log("Arriba");
-            transform.Translate(Vector3.forward * desplazamiento * Time.deltaTime);
-            //new Vector(0,0,1);
-        }
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            Debug.Log("Izquierda");
-            transform.Translate(Vector3.left * desplazamiento * Time.deltaTime);
+            transform.Translate(Vector3.forward*desplazamiento*Time.deltaTime);
+            //new Vector3(0,0,1);
         }
 
         if (Input.GetKey(KeyCode.S))
@@ -38,12 +30,15 @@ public class MovimientoBasico : MonoBehaviour
             Debug.Log("Abajo");
             transform.Translate(Vector3.back * desplazamiento * Time.deltaTime);
         }
-
         if (Input.GetKey(KeyCode.D))
         {
             Debug.Log("Derecha");
             transform.Translate(Vector3.right * desplazamiento * Time.deltaTime);
         }
-
+        if (Input.GetKey(KeyCode.A))
+        {
+            Debug.Log("Izquierda");
+            transform.Translate(Vector3.left * desplazamiento * Time.deltaTime);
+        }
     }
 }

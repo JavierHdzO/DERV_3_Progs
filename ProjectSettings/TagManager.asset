@@ -10,6 +10,8 @@ TagManager:
   - terrain
   - Lampara
   - Banco
+  - Encender
+  - Pista
   layers:
   - Default
   - TransparentFX

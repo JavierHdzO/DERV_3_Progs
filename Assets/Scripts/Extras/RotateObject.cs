@@ -10,18 +10,28 @@ public class RotateObject : MonoBehaviour
     void Start()
     {
         billete = GetComponent<Rigidbody>();
-
         billete.constraints = RigidbodyConstraints.FreezePositionY;
+        StartCoroutine("rotarObjeto");
     }
 
     // Update is called once per frame
     void Update()
     {
-        billete.transform.Rotate(0, angle, 0);
-        angle = angle + 1f;
-        if (angle == 181f)
+        
+    }
+
+    IEnumerator rotarObjeto() 
+    {
+        while (true) 
         {
-            angle = 0f;
+            billete.transform.Rotate(0, 0, angle);
+            angle = angle + 10f;
+            if (angle == 181f)
+            {
+                angle = 0f;
+            }
+            yield return new WaitForSeconds(0.5f);
         }
+        
     }
 }
