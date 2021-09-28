@@ -1,2 +1,6 @@
 # DERV_3_Unidad_1_Progs
- No sé x2
+INTEGRANTES:
+-Guzman Rivera Jesus Alberto
+-Hernandez Ortiz Francisco Javier
+-Muro Roman Sebastian
+-Rodriguez Bautista Mario Alberto
