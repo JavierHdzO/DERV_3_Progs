@@ -52,53 +52,37 @@ public class SistemaJuego : MonoBehaviour
     {
         string etiqueta = collision.gameObject.tag;
         string nombre;
-
         
-
         if (etiqueta.Equals("Dinero"))
         {
-
             nombre = collision.gameObject.name;
-
             GameObject gameObj;
             gameObj = GameObject.Find(nombre);
             Destroy(gameObj);
-
             puntaje++;
             txt_puntaje.text = puntaje.ToString()+"/30";
-
             tiempo += 10f;
-
         }
         if (etiqueta.Equals("Pista"))
         {
-
             nombre = collision.gameObject.name;
-
             GameObject gameObj;
             gameObj = GameObject.Find(nombre);
             Destroy(gameObj);
-
             pista++;
             txt_Pistas.text = pista.ToString();
-
             tiempo += 20f;
-
         }
-
 
     }
 
     IEnumerator cronometro()
     {
-
         while (true)
         {
             tiempo--;
             txt_tiempo.text = " " + tiempo.ToString("f0");
             yield return new WaitForSeconds(1.0f);
-        }
-
-        
+        }  
     }
 }

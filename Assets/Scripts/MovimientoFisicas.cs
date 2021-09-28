@@ -7,8 +7,6 @@ public class MovimientoFisicas : MonoBehaviour
 
     public float desplazamiento = 10;
 
-    //long i;
-
     Rigidbody rb;
 
 
@@ -48,8 +46,6 @@ public class MovimientoFisicas : MonoBehaviour
         {
             rb.MovePosition(rb.position + transform.right * desplazamiento * Time.deltaTime);
         }
-
-
 
     }
 }

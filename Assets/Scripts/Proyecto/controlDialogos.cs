@@ -25,27 +25,20 @@ public class controlDialogos : MonoBehaviour
             txtDialogo.text = _dialogo[i].texto;
             yield return new WaitForSeconds(1.5f);
         }
-
         dialogo.SetActive(false);
         if (this.name.Equals("contenedorThief")) 
         {
             Time.timeScale = 0;
         }
-
     }
 
     private void OnTriggerEnter(Collider other)
     {
         etiqueta = other.gameObject.tag;
-
         if (etiqueta.Equals("Player"))
         {
-            StartCoroutine(Decir(dialogoPersonajes));
-
-            
-        }
-
-        
+            StartCoroutine(Decir(dialogoPersonajes)); 
+        }   
     }
 
 

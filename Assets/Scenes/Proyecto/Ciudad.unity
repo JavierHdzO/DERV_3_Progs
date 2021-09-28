@@ -4339,7 +4339,7 @@ GameObject:
   - component: {fileID: 173797842}
   - component: {fileID: 173797846}
   m_Layer: 0
-  m_Name: c
+  m_Name: cambioEscenaFinal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12522,7 +12522,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &503586334 stripped
 GameObject:
@@ -19580,7 +19580,7 @@ Transform:
   m_Children:
   - {fileID: 1317456526}
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &779582839
 MonoBehaviour:
@@ -25468,7 +25468,7 @@ Transform:
   - {fileID: 1876543949}
   - {fileID: 1288143761}
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1039560810
 GameObject:
@@ -45112,7 +45112,7 @@ MonoBehaviour:
   dialogoPersonajes:
   - texto: "Steve: \xBFQu\xE9 tal? Oficial"
   - texto: "T\xFA: Buenas tarde, \xBFHa visto algo sospechoso?"
-  - texto: "Steve: Deber\xEDa revisar e\xF1 Hotel"
+  - texto: "e: Deber\xEDa revisar e\xF1 Hotelotel"
   - texto: "T\xFA: Gracias por la informaci\xF3n"
 --- !u!65 &1844141377
 BoxCollider:
@@ -45189,7 +45189,7 @@ Transform:
   m_Children:
   - {fileID: 543450652881757002}
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1845432000
 GameObject:
@@ -52263,7 +52263,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4005879899287914208, guid: 54f05de2b82d5ff4c9c15ae14300474c, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4005879899287914208, guid: 54f05de2b82d5ff4c9c15ae14300474c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52275,7 +52275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4005879899287914208, guid: 54f05de2b82d5ff4c9c15ae14300474c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1785
+      value: 1817.1
       objectReference: {fileID: 0}
     - target: {fileID: 4005879899287914208, guid: 54f05de2b82d5ff4c9c15ae14300474c, type: 3}
       propertyPath: m_LocalRotation.w
